@@ -16,8 +16,92 @@ Build a tool where users can try different CSS styles live on a box (change colo
     <title>Mini Css Playground</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" ></script>
+    <script src="https://kit.fontawesome.com/7c8a5c9cb8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
+    <h1>Mini Css PlayGround</h1>
+    <p>Tweak the already provided inputs to change the display of the box and learn some css while at it</p>
+  
+    <section>
+        <main>
+            <div id="playground_box"></div>
+        </main>
+    
+        <aside>
+            <p>Controls</p>
+            <div class="control-container">
+               <div class="type-1">
+                    <p>Background:</p>
+                    <input type="color" name="" id="background_color">
+               </div>
+               <p style="font-weight: 700; margin-bottom: 0.3rem;">Border <span><small>&iopf;</small></span></p>
+               <div class="type-1">
+                    <p>Border Style:</p>
+                    <select name="" id="border_style">
+                        <option value="none">None</option>
+                        <option value="solid">Solid</option>
+                        <option value="dashed">Dashed</option>
+                        <option value="dotted">Dotted</option>
+                        <option value="double">Double</option>
+                        <option value="groove">Groove</option>
+                        <option value="ridge">Ridge</option>
+                        <option value="inset">Inset</option>
+                        <option value="ouset">Outset</option>
+                      </select>                      
+               </div>
+               <div class="type-1">
+                    <p>Border Color:</p>
+                    <input type="color" name="" id="border_color">
+               </div>
+               <div>
+                    <p>Border Width</p>
+                    <input type="range" name="" id="border_width" min="0" max="100" value="0">
+               </div>
+               <div>
+                    <p>Border Height</p>
+                    <input type="range" name="" id="" min="0" max="1000" value="0">
+               </div>
+               <div>
+                    <p>Border Radius</p>
+                    <input type="range" name="" id="border_radius" min="0" max="100" value="0">
+               </div>
+               <p style="font-weight: 700; margin-bottom: 0.3rem;">Spacing <span><small>&iopf;</small></span></p>
+               <div class="aft-section">
+                    <div class="type-2">
+                        <p>Top:</p>
+                        <input type="number" id="top_spacing">
+                    </div>
+                    <div class="type-2">
+                        <p>Left:</p>
+                        <input type="number" id="left_spacing">
+                    </div>
+                    <div class="type-2">
+                        <p>Bottom:</p>
+                        <input type="number" id="bottom_spacing">
+                    </div>
+                    <div class="type-2">
+                        <p>Right:</p>
+                        <input type="number" id="right_spacing">
+                    </div>
+               </div>
+               <p style="font-weight: 700; margin-bottom: 0.3rem;">Size <span><small>&iopf;</small></span></p>
+               <div class="aft-section">
+                    <div class="type-2">
+                        <p>Height:</p>
+                        <input type="number" id="height_size">
+                    </div>
+                    <div class="type-2">
+                        <p>Width:</p>
+                        <input type="number" id="width_size">
+                    </div>
+               </div>
+               <div class="aft-section">
+                   <button class="reset_button" id="apply" >Apply</button>
+                   <button class="reset_button" id="reset" >Reset</button>
+               </div>
+            </div>
+        </aside>
+    </section>
 </body>
 </html>
