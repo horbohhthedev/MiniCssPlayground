@@ -18,7 +18,23 @@ Build a tool where users can try different CSS styles live on a box (change colo
     <script src="script.js" ></script>
     <script defer src="https://kit.fontawesome.com/7c8a5c9cb8.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-color: #000006;">
+    <div class="modal-icon" onclick="modal()">  
+        <i class="fa-sharp-duotone fa-solid fa-circle-info fa-2xl" style="--fa-primary-color: #d1baff; --fa-secondary-color: #ebd4ff;"></i></div>
+
+<div class="modal">
+    <h1>Using the Mini Css Playgroud Presets</h1>
+    <p><span>► Creating the box</span> <br> Set values to the height and Width input and you will have a box with those inputs ready (a box is created in css by applying height and width properties)</p>
+    <p><span>► Setting background Color</span> <br> Click on the background color input to give the box a color</p>
+    <p><span>► Giving it a border color</span> <br> Click on the border color input to give the box a color</p>
+    <p><span>► Making the border color show</span> <br> Move the border width range around to yuor preferred position</p>
+    <p><span>► Giving the border a style</span> <br> Select your preferred style from the Border style dopdown</p>
+    <p><span>► Smoothing the edges of the border</span> <br> You can make edges of the box by givin it a border radius. Move the point to your preferred position</p>
+    <p><span>► Moving the box around</span> <br> You can use the options in the Spacing tab to move the box around.</p>
+    <p><span>► Applying the styles</span> <br> Click on the 'Apply' button to apply your preferred style selection</p>
+    <p><span>► Reseting the styles</span> <br> Click on the 'Reset' button to clear styles and start again</p>
+    <button class="reset_button" onclick="modalClose()">Got it!</button>
+</div>
     
     <h1>Mini Css PlayGround</h1>
     <p>Tweak the already provided inputs to change the display of the box and learn some css while at it</p>

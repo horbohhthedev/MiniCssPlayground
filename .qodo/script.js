@@ -1,4 +1,20 @@
+function modal(){
+    document.querySelector('.modal').style.display = 'block';
+} 
 
+function modalClose(){
+    document.querySelector('.modal').style.display = 'none';
+}
+
+document.addEventListener("DOMContentLoaded", () =>{
+    if(!localStorage.getItem("visited")){
+        // show message
+        modal()
+
+        localStorage.setItem("visited", "true")
+    }
+
+} )
         // create an object outside the function scope that stores the values of the inputs
         // the object properties should carry the same name as the class names
         // the object would be saved in local storage
@@ -95,7 +111,7 @@
                 practiceBox.style.width = stylePresetVariables.width;
             }
 
-           // modal()
+            modal()
         }
 
         // call the function on load (this help in refresh)
@@ -138,5 +154,5 @@
                 practiceBox.style.width = stylePresetVariables.width;
             }
             console.log(stylePresetVariables);
-        
+            modal()
         }
