@@ -68,7 +68,7 @@ select {
     padding: 5px 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: white;
+    background-color: rgb(244, 237, 237);
     /* Remove default arrow in some browsers */
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -88,6 +88,10 @@ select:focus {
     outline: none;
     border-color: #4a90e2;
     box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+option{
+    color: #000000;
+    background-color: #ffffff;
 }
 input[type="range"] {
     /* Reset default styles */

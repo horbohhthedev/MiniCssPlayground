@@ -16,7 +16,7 @@ Build a tool where users can try different CSS styles live on a box (change colo
     <title>Mini Css Playground</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" ></script>
-    <script src="https://kit.fontawesome.com/7c8a5c9cb8.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/7c8a5c9cb8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -47,7 +47,7 @@ Build a tool where users can try different CSS styles live on a box (change colo
                         <option value="groove">Groove</option>
                         <option value="ridge">Ridge</option>
                         <option value="inset">Inset</option>
-                        <option value="ouset">Outset</option>
+                        <option value="outset">Outset</option>
                       </select>                      
                </div>
                <div class="type-1">
@@ -57,10 +57,6 @@ Build a tool where users can try different CSS styles live on a box (change colo
                <div>
                     <p>Border Width</p>
                     <input type="range" name="" id="border_width" min="0" max="100" value="0">
-               </div>
-               <div>
-                    <p>Border Height</p>
-                    <input type="range" name="" id="" min="0" max="1000" value="0">
                </div>
                <div>
                     <p>Border Radius</p>
@@ -97,8 +93,8 @@ Build a tool where users can try different CSS styles live on a box (change colo
                     </div>
                </div>
                <div class="aft-section">
-                   <button class="reset_button" id="apply" >Apply</button>
-                   <button class="reset_button" id="reset" >Reset</button>
+                   <button class="reset_button" id="apply" onclick="applyPresetStyle()" >Apply</button>
+                   <button class="reset_button" id="reset" onclick="resetStyles()">Reset</button>
                </div>
             </div>
         </aside>
